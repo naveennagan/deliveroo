@@ -3,6 +3,7 @@
     flex-direction: column;
     float: left;
     margin: 3rem;
+    cursor: pointer;
 }
 
 .Restaurant-card-img{
