@@ -1,0 +1,27 @@
+.Restaurant-card{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 3rem;
+}
+
+.Restaurant-card-img{
+    display: block;
+}
+
+.Restaurant-card-info{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: left;
+}
+
+.Restaurant-card-title{
+    font-weight: bold;
+}
+
+.Restaurant-card-tags{
+    font-style: italic;
+}
+

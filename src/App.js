@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import restaurants from './resources/data/restaurants';
+import Header from './components/Header';
+import Toolbar from './components/Toolbar';
+import RestaurantContainer from './components/RestaurantContainer';
+
+// To be fetched from API
+const userDetails = {
+  name: "Jane Smith"
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Header userDetails={userDetails}/>
+       <Toolbar locationDetails={{name: restaurants.neighborhood}}/>
+       <RestaurantContainer restaurants = {restaurants.restaurants}/>
     </div>
   );
 }

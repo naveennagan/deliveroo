@@ -1,0 +1,19 @@
+.restaurant-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.restaurant-count-info{
+    opacity: 0.6;
+    font-size: 0.75rem;
+}
+
+.restaurant-list{
+    margin-top: -7rem;
+    padding: 5rem;
+    margin-left: rem;
+}
+
+
+
